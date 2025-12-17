@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    @apply bg-brand-background text-brand-text-primary min-h-screen selection:bg-brand-primary/30 selection:text-brand-primary;
+  }
+
+  body {
+    @apply antialiased overflow-x-hidden;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-white/10 backdrop-blur-md border border-white/20 shadow-lg;
+  }
+
+  .glass-panel {
+    background-color: rgba(255, 255, 255, 0.6);
+    /* Frosted Glass */
+    @apply backdrop-blur-xl border border-white/40 shadow-xl;
+  }
+
+  .glass-card {
+    @apply relative bg-white/5 backdrop-blur-[2px] border border-white/20 ring-1 ring-white/10 rounded-2xl p-8 shadow-xl shadow-black/5 hover:shadow-blue-500/20 hover:-translate-y-2 transition-all duration-300;
+  }
+
+  .glass-card::before {
+    content: "";
+    @apply absolute inset-x-0 top-0 h-1/3 rounded-t-2xl bg-gradient-to-b from-white/20 to-transparent pointer-events-none;
+  }
+
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-brand-primary via-brand-secondary to-brand-accent;
+  }
+
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* Custom Animations that might be useful for simple repeats */
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
