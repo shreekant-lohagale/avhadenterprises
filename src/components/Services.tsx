@@ -75,7 +75,7 @@ const ServiceCard: React.FC<{ service: Service; index: number }> = ({ service, i
             </motion.div>
 
             <div className="relative z-10">
-                <div className="mb-6 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-white/80 text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition-colors duration-300 shadow-md border border-white/20">
+                <div className="mb-6 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-white/80 text-brand-primary group-hover:bg-brand-primary group-hover:text-white transition-colors duration-300 shadow-md border border-white/20">
                     <service.icon className="h-6 w-6" />
                 </div>
                 <h3 className="mb-4 text-xl font-bold text-slate-900 font-primary">{service.title}</h3>

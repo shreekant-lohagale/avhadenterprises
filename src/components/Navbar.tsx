@@ -66,9 +66,9 @@ const NavbarItem: React.FC<{ link: NavLink; onClick?: () => void }> = ({ link, o
 
     // Wrapper content based on type
     const Content = (
-        <span className="relative px-4 py-2 text-sm font-medium transition-colors hover:text-blue-600 group">
-            <span className={`relative z-10 ${isActive ? 'text-blue-600' : 'text-slate-600'}`}>{link.name}</span>
-            <span className={`absolute left-0 bottom-0 w-full h-[2px] bg-blue-600 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-center ${isActive ? 'scale-x-100' : ''}`} />
+        <span className="relative px-4 py-2 text-sm font-medium transition-colors hover:text-brand-primary group">
+            <span className={`relative z-10 ${isActive ? 'text-brand-primary' : 'text-slate-600'}`}>{link.name}</span>
+            <span className={`absolute left-0 bottom-0 w-full h-[2px] bg-brand-primary scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-center ${isActive ? 'scale-x-100' : ''}`} />
         </span>
     );
 
@@ -207,7 +207,7 @@ const Navbar: React.FC = () => {
                             {link.type === 'route' ? (
                                 <Link
                                     to={link.path}
-                                    className="text-slate-600 hover:text-blue-600 font-medium block text-lg py-2 border-b border-slate-100"
+                                    className="text-slate-600 hover:text-brand-primary font-medium block text-lg py-2 border-b border-slate-100"
                                 >
                                     {link.name}
                                 </Link>

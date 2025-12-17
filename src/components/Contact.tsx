@@ -25,7 +25,7 @@ const FloatingInput: React.FC<{
 
     const labelVariants = {
         default: { top: textarea ? "1.5rem" : "50%", y: "-50%", scale: 1, color: "#64748b" }, // slate-500
-        float: { top: "0px", y: "-50%", scale: 0.85, color: "#2563EB" }, // brand-primary
+        float: { top: "0px", y: "-50%", scale: 0.85, color: "#272A46" }, // brand-primary (Midnight)
     };
 
     return (
@@ -48,7 +48,7 @@ const FloatingInput: React.FC<{
                     onBlur={() => setIsFocused(false)}
                     required={required}
                     rows={4}
-                    className="w-full bg-transparent border-b border-slate-300 py-2 text-slate-900 focus:outline-none focus:border-blue-600 transition-colors resize-none font-secondary"
+                    className="w-full bg-transparent border-b border-slate-300 py-2 text-slate-900 focus:outline-none focus:border-brand-primary transition-colors resize-none font-secondary"
                 />
             ) : (
                 <input
@@ -59,7 +59,7 @@ const FloatingInput: React.FC<{
                     onFocus={() => setIsFocused(true)}
                     onBlur={() => setIsFocused(false)}
                     required={required}
-                    className="w-full bg-transparent border-b border-slate-300 py-2 text-slate-900 focus:outline-none focus:border-blue-600 transition-colors font-secondary"
+                    className="w-full bg-transparent border-b border-slate-300 py-2 text-slate-900 focus:outline-none focus:border-brand-primary transition-colors font-secondary"
                 />
             )}
         </div>
@@ -110,7 +110,7 @@ const Contact: React.FC = () => {
                             className="text-4xl md:text-5xl font-bold text-slate-900 font-primary leading-tight"
                         >
                             Ready to <br />
-                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">Scale Your Brand?</span>
+                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary to-brand-secondary">Scale Your Brand?</span>
                         </motion.h2>
                         <p className="text-lg text-slate-600 font-secondary leading-relaxed">
                             Let's discuss how we can transform your digital presence. Whether you need a new platform, better marketing, or deep analytics we are here to help.
@@ -118,7 +118,7 @@ const Contact: React.FC = () => {
 
                         <div className="space-y-6 pt-4">
                             <div className="glass-card flex items-center space-x-4 p-6">
-                                <div className="w-12 h-12 rounded-full bg-white/80 border border-white/20 flex items-center justify-center text-blue-600 shadow-md">
+                                <div className="w-12 h-12 rounded-full bg-white/80 border border-white/20 flex items-center justify-center text-brand-primary shadow-md">
                                     <Send className="w-5 h-5" />
                                 </div>
                                 <div>

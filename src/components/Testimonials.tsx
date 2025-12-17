@@ -107,11 +107,11 @@ const Testimonials: React.FC = () => {
                                     className="absolute w-full max-w-2xl"
                                 >
                                     <div className="glass-card mx-auto relative md:p-12">
-                                        <Quote className="absolute top-8 left-8 w-12 h-12 text-blue-600/40" />
+                                        <Quote className="absolute top-8 left-8 w-12 h-12 text-brand-primary/40" />
 
                                         <div className="relative z-10 flex flex-col items-center text-center">
-                                            <div className="w-20 h-20 rounded-full bg-gradient-to-br from-blue-600 to-indigo-600 p-1 mb-6 shadow-lg shadow-blue-500/20">
-                                                <div className="w-full h-full rounded-full bg-white flex items-center justify-center text-2xl font-bold text-blue-600 font-primary">
+                                            <div className="w-20 h-20 rounded-full bg-gradient-to-br from-brand-primary to-brand-secondary p-1 mb-6 shadow-lg shadow-brand-primary/20">
+                                                <div className="w-full h-full rounded-full bg-white flex items-center justify-center text-2xl font-bold text-brand-primary font-primary">
                                                     {testimonial.initial}
                                                 </div>
                                             </div>
@@ -127,7 +127,7 @@ const Testimonials: React.FC = () => {
 
                                             <div>
                                                 <h4 className="text-lg font-bold text-slate-900 font-primary">{testimonial.name}</h4>
-                                                <p className="text-blue-500 text-sm font-medium">{testimonial.role}, {testimonial.company}</p>
+                                                <p className="text-brand-secondary text-sm font-medium">{testimonial.role}, {testimonial.company}</p>
                                             </div>
                                         </div>
                                     </div>

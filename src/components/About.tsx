@@ -73,8 +73,8 @@ const About: React.FC = () => {
                             transition={{ duration: 0.6, delay: 0.4 }}
                             className="pt-4"
                         >
-                            <div className="inline-flex items-center px-4 py-2 rounded-full bg-brand-primary/10 border border-brand-primary/20 text-brand-primary font-medium font-primary tracking-wide">
-                                <span className="w-2 h-2 rounded-full bg-brand-success mr-2 animate-pulse" />
+                            <div className="inline-flex items-center px-4 py-2 rounded-full bg-brand-background border border-brand-surface text-brand-primary font-medium font-primary tracking-wide">
+                                <span className="w-2 h-2 rounded-full bg-emerald-500 mr-2 animate-pulse" />
                                 HQ: Nashik, Maharashtra, India
                             </div>
                         </motion.div>

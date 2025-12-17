@@ -41,23 +41,23 @@ const AboutPage: React.FC = () => {
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.2 }}
-                        className="inline-block py-1 px-3 rounded-full bg-white/5 border border-white/10 text-brand-orange text-sm font-medium mb-6"
+                        className="inline-block py-1 px-3 rounded-full bg-white/5 border border-white/10 text-brand-secondary text-sm font-medium mb-6"
                     >
                         Our Story
                     </motion.span>
                     <motion.h1
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
-                        className="text-4xl md:text-6xl font-bold text-brand-text-primary mb-6 font-primary leading-tight"
+                        className="text-4xl md:text-6xl font-bold text-white mb-6 font-primary leading-tight"
                     >
                         Building the Future of <br />
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary to-brand-secondary">Commerce</span>
+                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-secondary to-brand-primary">Commerce</span>
                     </motion.h1>
                     <motion.p
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.1 }}
-                        className="text-xl text-brand-text-secondary max-w-2xl mx-auto font-secondary"
+                        className="text-xl text-slate-300 max-w-2xl mx-auto font-secondary"
                     >
                         Driven by innovation, grounded in results.
                     </motion.p>

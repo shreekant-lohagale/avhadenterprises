@@ -21,7 +21,7 @@ const Marquee: React.FC<{ items: string[]; direction?: 'left' | 'right'; speed?:
         {[...items, ...items, ...items].map((item, index) => (
           <div
             key={index}
-            className="inline-flex items-center justify-center px-6 py-3 rounded-full bg-white border border-slate-200 shadow-sm text-slate-600 font-medium hover:bg-blue-600 hover:text-white hover:border-blue-600 transition-all cursor-default text-sm sm:text-base font-secondary tracking-wide"
+            className="inline-flex items-center justify-center px-6 py-3 rounded-full bg-white border border-brand-surface shadow-sm text-slate-700 font-medium hover:bg-brand-primary hover:text-white hover:border-brand-primary transition-all cursor-default text-sm sm:text-base font-secondary tracking-wide"
           >
             {item}
           </div>
@@ -29,21 +29,21 @@ const Marquee: React.FC<{ items: string[]; direction?: 'left' | 'right'; speed?:
       </motion.div>
 
       {/* Gradient Masks */}
-      <div className="absolute inset-y-0 left-0 w-20 bg-gradient-to-r from-slate-50 to-transparent z-10" />
-      <div className="absolute inset-y-0 right-0 w-20 bg-gradient-to-l from-slate-50 to-transparent z-10" />
+      <div className="absolute inset-y-0 left-0 w-20 bg-gradient-to-r from-brand-background to-transparent z-10" />
+      <div className="absolute inset-y-0 right-0 w-20 bg-gradient-to-l from-brand-background to-transparent z-10" />
     </div>
   );
 };
 
 const Specialties: React.FC = () => {
   return (
-    <section id="specialties" className="py-24 bg-slate-50 border-y border-slate-200 relative overflow-hidden">
+    <section id="specialties" className="py-24 bg-brand-background border-y border-brand-surface relative overflow-hidden">
       {/* Background tech grip */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 relative z-10">
         <div className="text-center mb-12">
-          <span className="text-blue-600 font-semibold text-sm tracking-uppercase mb-4 block font-secondary">Technologies</span>
+          <span className="text-brand-primary font-semibold text-sm tracking-uppercase mb-4 block font-secondary">Technologies</span>
           <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6 font-primary">
             Built with Modern Stack
           </h2>
